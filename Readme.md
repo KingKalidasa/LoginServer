@@ -9,5 +9,5 @@ npm install
 # Run
 
 ```console
-npm run
+npm start
 ```
