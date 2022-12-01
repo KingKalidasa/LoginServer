@@ -3,7 +3,7 @@ const Cryptr = require('cryptr');
 const crypto = new Cryptr('hardcoded_key32');
 
 let pass1 = crypto.encrypt('welfj');
-let pass2 = crypto.encrypt('42454');
+let pass2 = crypto.encrypt(42454);
 let pass3 = crypto.encrypt('hunter2');
 
 let items = {
@@ -25,9 +25,8 @@ fs.writeFile(
 	(err) => {
 		if (err) console.log(err);
 		else {
-			console.log('File written successfully\n');
-			console.log('The written has the following contents:');
-			console.log(fs.readFileSync('secret passwords.txt', 'utf8'));
+			console.log('File written successfully');
+			// console.log(fs.readFileSync('secret passwords.txt', 'utf8'));
 		}
 	}
 );
