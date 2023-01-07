@@ -1,5 +1,5 @@
-# Login Server for Lauretta
-This is just a quick login server api for toy purposes. The current encryption scheme is not ideal for passwords, use at own risk.
+# Login Server Test
+This is just a quick login server api for toy purposes. The current encryption scheme is not correct for password usage, use at own risk.
 
 # Install
 ```console
